@@ -55,7 +55,7 @@ def TTS(text):
     #)
     #response.stream_to_file(filename)
 
-    with client.audio.with_streaming_response.create(
+    with client.audio.speech.with_streaming_response.create(
         model="tts-1",
         voice="alloy",
         input=text
